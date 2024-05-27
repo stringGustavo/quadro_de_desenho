@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenhando no Canvas</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<body>
+    <h1>Desenhando no Canvas</h1>
+    <article style="display: flex;">
+        <section style="display: block; border: 2px solid black; width: 20%; color: white">
+            <div>
+                <label for="color">Escolha uma cor</label>
+                <input type="color" id="color">
+            </div>
+            <br>
+            <div>
+                <label for="bs">Tamanho do Pincel</label>
+                <button value="5" class="btn-brushSize">05</button>
+                <button value="10" class="btn-brushSize">10</button>
+                <button value="15" class="btn-brushSize">15</button>
+                <button value="20" class="btn-brushSize">20</button>
+                <button value="25" class="btn-brushSize">25</button>
+                <button class="btn-advanced">avançado</button>
+
+                <div class="advanced">
+                    <label for="">Tamanho Específico:</label>
+                    <input type="number" class="brush-size" id="bs" min="1" placeholder="Ex.: 45">
+                </div>
+            </div>
+
+            <button class="clear">Limpar Quadro</button>
+        </section>
+
+        <section>
+            <canvas id="tela" width="1500" height="800"></canvas>
+        </section>
+    </article>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
